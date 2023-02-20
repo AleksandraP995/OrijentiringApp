@@ -1,0 +1,14 @@
+
+.img-container {
+    overflow: hidden;
+  }
+  
+  .image {
+    width: 450px;
+    transition: transform 0.3s;
+  }
+  
+  .img-container image:hover {
+    transform: scale(1.5);
+  }
+

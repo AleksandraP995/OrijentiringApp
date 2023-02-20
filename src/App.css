@@ -1,38 +1,170 @@
-.App {
-  text-align: center;
+
+:root {
+  --dark-green: "#3d7a4e";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body, html {
+  height: 100%;
+  margin: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.hi {
+    color: black;
+}
+.parent-wrapper {
+    height: 70%;
+    width: 70%;
+    margin: auto;
+    border: 1px solid black;
+    
   }
+  .parent {
+    display: flex;
+    font-size: 0;
+    flex-wrap: wrap;
+    margin: -10px 0 0 -10px;
+  }
+  .child {
+    display: inline-block;
+    
+    margin: 5px 0 0 5px;
+    flex-grow: 1;
+    height: 100px;
+  }
+
+  .img-container {
+    overflow: hidden;
+  }
+  
+  .image {
+    /* width: 150px; */
+    transition: transform 0.3s;
+  }
+  
+  .image:hover {
+    transform: scale(1.5);
+  }
+
+  .btn:hover {
+    background-color: pink;
+    color: var(--dark-green);
+  }
+
+  .divOut{
+    display: inline;
+  }
+
+  #cardItem {
+    margin: 0;
+    display: inline;
+    width: 20rem;
+    margin-left: 5rem;
+    border: 5px, var(--dark-green);
+  }
+
+  #cardContainer{
+    margin-left: 5rem
+  }
+
+  #searchContainer{
+    margin-left: 11rem
+  }
+
+  #searchBar{
+    margin-left: -17rem;
+    margin-top: .3rem;
+    border: 1em black
+  }
+
+  .searchForm{
+    border: .15rem solid darkgreen;
+    color: var(--dark-green);
+    border-radius: 5px;
+  }
+
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+
+  }
+
+  .overlayHeader {
+    position: absolute; 
+    padding-top: 5em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    font-size: 5rem;
+    
+  }
+  .bg-main {
+    min-height: 30%;
+    min-width: 2048px; 
+    margin-left: -20em;
+    margin-bottom: -25em;
+    width: 100%;
+    height: auto;
+    /*position: fixed;*/
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30em; 
+  }
+  .bg {
+    min-height: 30%;
+    min-width: 1024px; 
+    width: 100%;
+    height: auto;
+    /*position: fixed; */
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 30em; */
+}
+.heroImageContainer {
+  height: 30em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#navTabCont {
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+}
+
+.banner{
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 330px;
+  height: 350px;
+  position: relative;
+  -webkit-transition: min-height 0.4s ease;
+  transition: min-height 0.4s ease;
+  width: 100%; }
+  .banner::before {
+    background-color: rgba(22, 22, 22, 0.4);
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0; }
+  @media only screen and (min-width: 120px) and (max-width: 767px) {
+    .banner {
+      min-height: 230px; } 
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.playersPargraphStyle {
+  margin-left: 15rem;
 }
